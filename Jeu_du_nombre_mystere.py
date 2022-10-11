@@ -2,7 +2,6 @@ from random import random, randrange
 from tokenize import String
 print("Bienvenue dans le jeu du nombre mystère \n")
 a = int(randrange(1, 100))
-print(a)
 e = None
 while e != "quit":
     b = 0
@@ -20,6 +19,6 @@ while e != "quit":
         n = n-1
     if str(a) == str(b): print("Félicitations vous avez trouvez le nombre mystère !!!\n")
     else: print(f"Vous n'avez plus d'essais, le nombre mystère était {a} \n") 
-    e = input("Taper \"quit\" si vous voulez réessayer le jeu sinon appuyer sur une autre touche :\n")
+    e = input("Taper \"quit\" si vous voulez quitter le jeu sinon appuyer sur une autre touche pour réessayer:\n")
     a = int(randrange(1, 100))
 else: print("Merci d'avoir joué au jeu du nombre mystère !")
